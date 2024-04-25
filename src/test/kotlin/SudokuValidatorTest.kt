@@ -35,22 +35,22 @@ class MissingLetterTests {
         assertEquals(false, validate(board))
     }
 
-//    @Test
-//    fun `all rows are 1 - 9`() {
-//        val board = arrayOf(
-//            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
-//            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
-//            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
-//            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
-//            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
-//            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
-//            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
-//            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
-//            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
-//        )
-//        assertEquals(false, validate(board))
-//    }
-//
+    @Test
+    fun `all rows are 1 - 9`() {
+        val board = arrayOf(
+            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
+            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
+            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
+            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
+            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
+            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
+            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
+            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9),
+            arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
+        )
+        assertEquals(false, validate(board))
+    }
+
 //    @Test
 //    fun `all columns are 1 - 9`() {
 //        val board = arrayOf(
