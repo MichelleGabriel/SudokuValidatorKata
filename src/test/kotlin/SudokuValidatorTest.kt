@@ -179,38 +179,38 @@ class MissingLetterTests {
         assertEquals(true, validate(board))
     }
 
-//    @Test
-//    fun `invalid because of 0 instead of 9`() {
-//        val board = arrayOf(
-//            arrayOf(8, 4, 7, 2, 6, 5, 1, 0, 3),
-//            arrayOf(1, 3, 6, 7, 0, 8, 2, 4, 5),
-//            arrayOf(0, 5, 2, 1, 4, 3, 8, 6, 7),
-//            arrayOf(4, 2, 0, 6, 7, 1, 5, 3, 8),
-//            arrayOf(6, 7, 8, 5, 3, 2, 0, 1, 4),
-//            arrayOf(3, 1, 5, 4, 8, 0, 7, 2, 6),
-//            arrayOf(5, 6, 4, 0, 1, 7, 3, 8, 2),
-//            arrayOf(7, 8, 1, 3, 2, 4, 6, 5, 0),
-//            arrayOf(2, 0, 3, 8, 5, 6, 4, 7, 1)
-//        )
-//        assertEquals(false, validate(board))
-//    }
-//
-//    @Test
-//    fun `invalid because of duplicate 3 in eighth column`() {
-//        val board = arrayOf(
-//            arrayOf(1, 3, 2, 5, 7, 9, 4, 6, 8),
-//            arrayOf(4, 9, 8, 2, 6, 1, 3, 7, 5),
-//            arrayOf(7, 5, 6, 3, 8, 4, 2, 1, 9),
-//            arrayOf(6, 4, 3, 1, 5, 8, 7, 9, 2),
-//            arrayOf(5, 2, 1, 7, 9, 3, 8, 4, 6),
-//            arrayOf(9, 8, 7, 4, 2, 6, 5, 3, 1),
-//            arrayOf(2, 1, 4, 9, 3, 5, 6, 8, 7),
-//            arrayOf(3, 6, 5, 8, 1, 7, 9, 2, 4),
-//            arrayOf(8, 7, 9, 6, 4, 2, 1, 3, 5)
-//        )
-//        assertEquals(false, validate(board))
-//    }
-//
+    @Test
+    fun `invalid because of 0 instead of 9`() {
+        val board = arrayOf(
+            arrayOf(8, 4, 7, 2, 6, 5, 1, 0, 3),
+            arrayOf(1, 3, 6, 7, 0, 8, 2, 4, 5),
+            arrayOf(0, 5, 2, 1, 4, 3, 8, 6, 7),
+            arrayOf(4, 2, 0, 6, 7, 1, 5, 3, 8),
+            arrayOf(6, 7, 8, 5, 3, 2, 0, 1, 4),
+            arrayOf(3, 1, 5, 4, 8, 0, 7, 2, 6),
+            arrayOf(5, 6, 4, 0, 1, 7, 3, 8, 2),
+            arrayOf(7, 8, 1, 3, 2, 4, 6, 5, 0),
+            arrayOf(2, 0, 3, 8, 5, 6, 4, 7, 1)
+        )
+        assertEquals(false, validate(board))
+    }
+
+    @Test
+    fun `invalid because of duplicate 3 in eighth column`() {
+        val board = arrayOf(
+            arrayOf(1, 3, 2, 5, 7, 9, 4, 6, 8),
+            arrayOf(4, 9, 8, 2, 6, 1, 3, 7, 5),
+            arrayOf(7, 5, 6, 3, 8, 4, 2, 1, 9),
+            arrayOf(6, 4, 3, 1, 5, 8, 7, 9, 2),
+            arrayOf(5, 2, 1, 7, 9, 3, 8, 4, 6),
+            arrayOf(9, 8, 7, 4, 2, 6, 5, 3, 1),
+            arrayOf(2, 1, 4, 9, 3, 5, 6, 8, 7),
+            arrayOf(3, 6, 5, 8, 1, 7, 9, 2, 4),
+            arrayOf(8, 7, 9, 6, 4, 2, 1, 3, 5)
+        )
+        assertEquals(false, validate(board))
+    }
+
 //    @Test
 //    fun `invalid boxes`() {
 //        val board = arrayOf(

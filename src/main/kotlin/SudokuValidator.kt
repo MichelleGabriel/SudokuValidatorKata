@@ -4,12 +4,11 @@ fun validate(board: Array<Array<Int>>): Boolean {
     val allColumnsDistinct = allColumns.isDistinct()
     val allRowsDistinct = allRows.isDistinct()
 
-
     return allRowsDistinct && allColumnsDistinct
 }
 
 private fun Array<Array<Int>>.isDistinct() =
-    this.all { it.size == it.distinct().size }
+    this.all { it.toSet() == (1..9).toSet()}
 
 private fun Array<Array<Int>>.column(index: Int) =
     this.map { row -> row[index] }
