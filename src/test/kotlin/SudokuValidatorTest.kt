@@ -163,22 +163,22 @@ class MissingLetterTests {
         assertEquals(true, validate(board))
     }
 
-//    @Test
-//    fun `valid sudoku 8`() {
-//        val board = arrayOf(
-//            arrayOf(8, 4, 7, 2, 6, 5, 1, 9, 3),
-//            arrayOf(1, 3, 6, 7, 9, 8, 2, 4, 5),
-//            arrayOf(9, 5, 2, 1, 4, 3, 8, 6, 7),
-//            arrayOf(4, 2, 9, 6, 7, 1, 5, 3, 8),
-//            arrayOf(6, 7, 8, 5, 3, 2, 9, 1, 4),
-//            arrayOf(3, 1, 5, 4, 8, 9, 7, 2, 6),
-//            arrayOf(5, 6, 4, 9, 1, 7, 3, 8, 2),
-//            arrayOf(7, 8, 1, 3, 2, 4, 6, 5, 9),
-//            arrayOf(2, 9, 3, 8, 5, 6, 4, 7, 1)
-//        )
-//        assertEquals(true, validate(board))
-//    }
-//
+    @Test
+    fun `valid sudoku 8`() {
+        val board = arrayOf(
+            arrayOf(8, 4, 7, 2, 6, 5, 1, 9, 3),
+            arrayOf(1, 3, 6, 7, 9, 8, 2, 4, 5),
+            arrayOf(9, 5, 2, 1, 4, 3, 8, 6, 7),
+            arrayOf(4, 2, 9, 6, 7, 1, 5, 3, 8),
+            arrayOf(6, 7, 8, 5, 3, 2, 9, 1, 4),
+            arrayOf(3, 1, 5, 4, 8, 9, 7, 2, 6),
+            arrayOf(5, 6, 4, 9, 1, 7, 3, 8, 2),
+            arrayOf(7, 8, 1, 3, 2, 4, 6, 5, 9),
+            arrayOf(2, 9, 3, 8, 5, 6, 4, 7, 1)
+        )
+        assertEquals(true, validate(board))
+    }
+
 //    @Test
 //    fun `invalid because of 0 instead of 9`() {
 //        val board = arrayOf(
