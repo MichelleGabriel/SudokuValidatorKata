@@ -1,13 +1,13 @@
 fun validate(board: Array<Array<Int>>): Boolean {
     val allRows = board
     val allColumns = board.columns()
-    val allColumnsDistinct = allColumns.isDistinct()
-    val allRowsDistinct = allRows.isDistinct()
+    val allColumnsDistinct = allColumns.isValid()
+    val allRowsDistinct = allRows.isValid()
 
     return allRowsDistinct && allColumnsDistinct
 }
 
-private fun Array<Array<Int>>.isDistinct() =
+private fun Array<Array<Int>>.isValid() =
     this.all { it.toSet() == (1..9).toSet()}
 
 private fun Array<Array<Int>>.column(index: Int) =
